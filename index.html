@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enhanced Fitness Tracker</h1>
+        <form id="workoutForm">
+            <div class="form-group">
+                <label for="exercise">Exercise:</label>
+                <input type="text" id="exercise" placeholder="e.g., Running">
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" placeholder="e.g., 30">
+            </div>
+            <div class="form-group">
+                <label for="calories">Calories Burned:</label>
+                <input type="number" id="calories" placeholder="e.g., 300">
+            </div>
+            <button type="submit">Add Workout</button>
+        </form>
+
+        <h2>Workout Log</h2>
+        <table id="workoutTable">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Duration (min)</th>
+                    <th>Calories Burned</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <h3>Total Calories Burned: <span id="totalCalories">0</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
